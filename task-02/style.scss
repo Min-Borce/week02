@@ -1,0 +1,213 @@
+// .navbar-inverse {
+//     margin: 0;
+// }
+// .navbar {
+//     border-radius: 0;
+// }
+// video {
+//     position: relative;
+//     width: 100%;
+// }
+// .card {
+//     width: 30%;
+// }
+// h2 {
+//     text-align: center;
+// }
+// .row {
+//     align-content: center;
+// }
+// .overlay-text {
+//     color: white;
+//     background-color: red;
+//     position: absolute;
+//     z-index: 1;
+// }
+// .container-relative {
+//     position: relative;
+// }
+// .logo {
+//     margin: 1%;
+//     width: 20px;
+//     float: left;
+// }
+// .carousel-caption {
+//     visibility: hidden;
+// }
+// img {
+//     margin-bottom: 3%;
+// }
+// img:hover {
+//     -webkit-filter: grayscale(100%);
+//     /* Ch 23+, Saf 6.0+, BB 10.0+ */
+//     filter: grayscale(100%);
+//     // /* FF 35+ */
+// }
+// .text-overlay:hover {
+//     .carousel-caption {
+//         visibility: visible;
+//     }
+//     -webkit-filter: grayscale(100%);
+//     /* Ch 23+, Saf 6.0+, BB 10.0+ */
+//     filter: grayscale(100%);
+// }
+// .ft-copyright {
+//     background-color: #101010;
+//     border-top: 1px solid #121d6d;
+//     display: flex;
+//     padding-bottom: 1%;
+//     color: white;
+//     padding-right: 25px;
+// }
+// .copyright {
+//     text-align: end;
+//     padding: 1%;
+// }
+// .mapouter {
+//     text-align: right;
+// }
+// .gmap_canvas {
+//     overflow: hidden;
+//     background: none!important;
+// }
+// .form-group {
+//     margin-top: 7%;
+// }
+// iframe {
+//     width: 90%;
+//     height: 400px;
+// }
+// .submit {
+//     margin: 5%;
+// }
+// .over-video {
+//     position: absolute;
+//     z-index: 1;
+//     color: red;
+// }
+// .about {
+//     margin-top: -5px;
+//     background-color: #b7b7b7;
+// }
+// .movies {
+//     background-color: #cfcfcf;
+// }
+// .heroes {
+//     background-color: #b7b7b7;
+// }
+// .contact {
+//     background-color: #cfcfcf;
+// }
+// NEW NEW
+$color_1: white;
+$color_2: red;
+$background_color_1: red;
+$background_color_2: #101010;
+$background_color_3: #b7b7b7;
+$background_color_4: #cfcfcf;
+
+/* Ch 23+, Saf 6.0+, BB 10.0+ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-inverse {
+    margin: 0;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+video {
+    position: relative;
+    width: 100%;
+}
+
+.card {
+    width: 30%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo {
+    margin: 1%;
+    width: 20px;
+    float: left;
+}
+
+.carousel-caption {
+    visibility: hidden;
+}
+
+img {
+    margin-bottom: 3%;
+    &:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
+
+.text-overlay {
+    &:hover {
+        .carousel-caption {
+            visibility: visible;
+        }
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
+
+.ft-copyright {
+    background-color: $background_color_2;
+    border-top: 1px solid #121d6d;
+    display: flex;
+    padding-bottom: 1%;
+    color: $color_1;
+    padding-right: 25px;
+    .copyright {
+        text-align: end;
+        padding: 1%;
+    }
+}
+
+.mapouter {
+    text-align: right;
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        iframe {
+            width: 90%;
+            height: 400px;
+        }
+    }
+}
+
+.form-group {
+    margin-top: 7%;
+}
+
+.submit {
+    margin: 5%;
+}
+
+.about {
+    margin-top: -5px;
+    background-color: $background_color_3;
+    // background-color: red;
+}
+
+.movies {
+    background-color: $background_color_4;
+}
+
+.heroes {
+    background-color: $background_color_3;
+}
+
+.contact {
+    background-color: $background_color_4;
+}

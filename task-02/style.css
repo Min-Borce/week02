@@ -1,0 +1,80 @@
+/* Ch 23+, Saf 6.0+, BB 10.0+ */
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.navbar-inverse {
+  margin: 0; }
+
+.navbar {
+  border-radius: 0; }
+
+video {
+  position: relative;
+  width: 100%; }
+
+.card {
+  width: 30%; }
+
+h2 {
+  text-align: center; }
+
+.logo {
+  margin: 1%;
+  width: 20px;
+  float: left; }
+
+.carousel-caption {
+  visibility: hidden; }
+
+img {
+  margin-bottom: 3%; }
+  img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+
+.text-overlay:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .text-overlay:hover .carousel-caption {
+    visibility: visible; }
+
+.ft-copyright {
+  background-color: #101010;
+  border-top: 1px solid #121d6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1%;
+  color: white;
+  padding-right: 25px; }
+  .ft-copyright .copyright {
+    text-align: end;
+    padding: 1%; }
+
+.mapouter {
+  text-align: right; }
+  .mapouter .gmap_canvas {
+    overflow: hidden;
+    background: none !important; }
+    .mapouter .gmap_canvas iframe {
+      width: 90%;
+      height: 400px; }
+
+.form-group {
+  margin-top: 7%; }
+
+.submit {
+  margin: 5%; }
+
+.about {
+  margin-top: -5px;
+  background-color: #b7b7b7; }
+
+.movies {
+  background-color: #cfcfcf; }
+
+.heroes {
+  background-color: #b7b7b7; }
+
+.contact {
+  background-color: #cfcfcf; }

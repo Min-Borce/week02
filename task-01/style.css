@@ -1,0 +1,188 @@
+@-webkit-keyframes "fadeInOut" {
+  0% {
+    opacity: 0; }
+  45% {
+    opacity: 1; }
+  100% {
+    opacity: 0%; } }
+
+@keyframes "fadeInOut" {
+  0% {
+    opacity: 0; }
+  45% {
+    opacity: 1; }
+  100% {
+    opacity: 0%; } }
+
+.fa-bars {
+  margin: 0%;
+  color: black;
+  background-color: white;
+  border: solid white; }
+
+.mobile-menu {
+  width: 100%;
+  display: none; }
+
+.menu2 {
+  display: none;
+  padding: 0;
+  width: 100%; }
+
+ul.meni2 {
+  width: 100%;
+  padding: 0%;
+  margin-top: 0%;
+  margin-bottom: -2%;
+  overflow: hidden;
+  background-color: grey;
+  list-style-type: none; }
+
+li a.menu2 {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none; }
+  li a.menu2:hover {
+    padding: 2px;
+    background-color: #696969; }
+
+li a.menu {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none; }
+  li a.menu:hover {
+    padding: 13px;
+    background-color: #696969; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: blue; }
+
+.menu {
+  padding: 0;
+  margin-top: 5%;
+  width: 100%; }
+
+ul.meni {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  list-style-type: none; }
+
+li.meni {
+  float: left; }
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: red; }
+
+footer {
+  clear: both;
+  background-color: yellowgreen;
+  width: 100%;
+  padding-top: 2%; }
+
+.yellow {
+  background-color: yellow;
+  margin: auto;
+  width: 85%;
+  height: 15vw;
+  border: 3px solid black;
+  padding: 2%;
+  margin-top: 8%; }
+  .yellow:hover {
+    background-color: #dede1d; }
+
+.orange-div {
+  margin-left: 1%;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .orange-div .orange {
+    width: 18%;
+    padding: 1%;
+    padding-bottom: 13%;
+    margin: 2%;
+    background-color: orange; }
+    .orange-div .orange:hover {
+      background-color: #ca9027; }
+
+.left-section {
+  background-color: green;
+  width: 76%;
+  display: block;
+  float: left;
+  clear: both;
+  padding: 2%;
+  margin-top: -16px; }
+
+aside {
+  display: block;
+  margin-top: -16px;
+  background-color: blue;
+  width: 20%;
+  padding-bottom: 20%;
+  float: right; }
+
+@media screen and (max-width: 999px) {
+  aside {
+    display: none; }
+  .orange-div {
+    margin-left: 1%;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .orange-div .orange {
+      width: 40%;
+      padding-bottom: 15%; }
+  .left-section {
+    background-color: green;
+    width: 96%;
+    height: 100%;
+    float: left;
+    clear: both;
+    padding: 2%;
+    margin-top: -16px; }
+  body {
+    background-color: white; } }
+
+@media screen and (max-width: 399px) {
+  .menu {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0; }
+  .orange-div .orange {
+    width: 80%;
+    padding-bottom: 20%; }
+  .mobile-menu {
+    height: 10vh;
+    text-align: right;
+    width: 100%;
+    display: inline-block; }
+  .menu-click:hover .menu2 {
+    display: block;
+    text-align: center;
+    -webkit-animation-name: fadeInOut;
+    animation-name: fadeInOut;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s; }
+  .menu-click:hover .fa-bars {
+    background-color: yellow;
+    border: solid yellow; } }

@@ -1,0 +1,234 @@
+$color_1: black;
+$color_2: white;
+$font_family_1: Arial,
+Helvetica,
+sans-serif;
+$background_color_1: white;
+$background_color_2: grey;
+$background_color_3: #696969;
+$background_color_4: red;
+$background_color_5: yellowgreen;
+$background_color_6: #dede1d;
+$background_color_7: yellow;
+$background_color_8: #ca9027;
+$background_color_9: orange;
+$background_color_10: blue;
+$background_color_11: green;
+$background_color_12: black;
+// ANIMATE
+@keyframes "fadeInOut" {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+// SCSS
+.fa-bars {
+    margin: 0%;
+    color: $color_1;
+    background-color: $background_color_1;
+    border: solid white;
+}
+
+.mobile-menu {
+    width: 100%;
+    display: none;
+}
+
+.menu2 {
+    display: none;
+    padding: 0;
+    width: 100%;
+}
+
+ul.meni2 {
+    width: 100%;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: -2%;
+    overflow: hidden;
+    background-color: $background_color_2;
+    list-style-type: none;
+}
+
+li {
+    a.menu2 {
+        display: block;
+        color: $color_2;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            padding: 2px;
+            background-color: $background_color_3;
+        }
+    }
+    a.menu {
+        display: block;
+        color: $color_2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        &:hover {
+            padding: 13px;
+            background-color: $background_color_3;
+        }
+    }
+}
+
+body {
+    font-family: $font_family_1;
+    padding: 0;
+    margin: 0;
+    background-color: $background_color_10;
+}
+
+.menu {
+    padding: 0;
+    margin-top: 5%;
+    width: 100%;
+}
+
+ul.meni {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: $background_color_2;
+    list-style-type: none;
+}
+
+li.meni {
+    float: left;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-color: $background_color_4;
+}
+
+footer {
+    clear: both;
+    background-color: $background_color_5;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.yellow {
+    &:hover {
+        background-color: $background_color_6;
+    }
+    background-color: $background_color_7;
+    margin: auto;
+    width: 85%;
+    height: 15vw;
+    border: 3px solid black;
+    padding: 2%;
+    margin-top: 8%;
+}
+
+.orange-div {
+    margin-left: 1%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    .orange {
+        &:hover {
+            background-color: $background_color_8;
+        }
+        width: 18%;
+        padding: 1%;
+        padding-bottom: 13%;
+        margin: 2%;
+        background-color: $background_color_9;
+    }
+}
+
+.left-section {
+    background-color: $background_color_11;
+    width: 76%;
+    display: block;
+    float: left;
+    clear: both;
+    padding: 2%;
+    margin-top: -16px;
+}
+
+aside {
+    display: block;
+    margin-top: -16px;
+    background-color: $background_color_10;
+    width: 20%;
+    padding-bottom: 20%;
+    float: right;
+}
+
+// RESPONSIVE
+@media screen and (max-width: 999px) {
+    aside {
+        display: none;
+    }
+    .orange-div {
+        margin-left: 1%;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .orange {
+            width: 40%;
+            padding-bottom: 15%;
+        }
+    }
+    .left-section {
+        background-color: $background_color_11;
+        width: 96%;
+        height: 100%;
+        float: left;
+        clear: both;
+        padding: 2%;
+        margin-top: -16px;
+    }
+    body {
+        background-color: $background_color_1;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .menu {
+        display: none;
+        width: 35px;
+        height: 5px;
+        background-color: $background_color_12;
+        margin: 6px 0;
+    }
+    .orange-div {
+        .orange {
+            width: 80%;
+            padding-bottom: 20%;
+        }
+    }
+    .mobile-menu {
+        height: 10vh;
+        text-align: right;
+        width: 100%;
+        display: inline-block;
+    }
+    .menu-click {
+        &:hover {
+            .menu2 {
+                display: block;
+                text-align: center;
+                animation-name: fadeInOut;
+                animation-duration: 3s;
+            }
+            .fa-bars {
+                background-color: $background_color_7;
+                border: solid yellow;
+            }
+        }
+    }
+}
